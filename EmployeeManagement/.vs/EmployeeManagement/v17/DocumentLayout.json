@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|c:\\users\\przem\\documents\\github\\employee-management\\employeemanagement\\employeemanagement\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|solutionrelative:employeemanagement\\entities\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|c:\\users\\przem\\documents\\github\\employee-management\\employeemanagement\\employeemanagement\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|solutionrelative:employeemanagement\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|c:\\users\\przem\\documents\\github\\employee-management\\employeemanagement\\employeemanagement\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|solutionrelative:employeemanagement\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|c:\\users\\przem\\documents\\github\\employee-management\\employeemanagement\\employeemanagement\\entities\\duty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|solutionrelative:employeemanagement\\entities\\duty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|c:\\users\\przem\\documents\\github\\employee-management\\employeemanagement\\employeemanagement\\entities\\companydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F735C2F0-D091-4C0B-BA7F-222512F67E16}|EmployeeManagement\\EmployeeManagement.csproj|solutionrelative:employeemanagement\\entities\\companydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CompanyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\CompanyDbContext.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement\\Entities\\CompanyDbContext.cs",
+              "ToolTip": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\CompanyDbContext.cs",
+              "RelativeToolTip": "EmployeeManagement\\Entities\\CompanyDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T11:49:16.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Duty.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\Duty.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement\\Entities\\Duty.cs",
+              "ToolTip": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\Duty.cs",
+              "RelativeToolTip": "EmployeeManagement\\Entities\\Duty.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T11:32:28.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\Employee.cs",
+              "RelativeToolTip": "EmployeeManagement\\Entities\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T11:18:35.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement\\Entities\\Address.cs",
+              "ToolTip": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\Address.cs",
+              "RelativeToolTip": "EmployeeManagement\\Entities\\Address.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T11:16:54.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Company.cs",
+              "DocumentMoniker": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\Company.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement\\Entities\\Company.cs",
+              "ToolTip": "C:\\Users\\przem\\Documents\\GitHub\\Employee-Management\\EmployeeManagement\\EmployeeManagement\\Entities\\Company.cs",
+              "RelativeToolTip": "EmployeeManagement\\Entities\\Company.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T11:13:36.833Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
