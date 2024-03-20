@@ -33,9 +33,6 @@ namespace EmployeeManagement.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.Property<int>("CompanyId")
-                        .HasColumnType("int");
-
                     b.Property<string>("PostalCode")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -47,7 +44,7 @@ namespace EmployeeManagement.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Addresss");
+                    b.ToTable("Addresses");
                 });
 
             modelBuilder.Entity("EmployeeManagement.Entities.Company", b =>
@@ -77,10 +74,9 @@ namespace EmployeeManagement.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AddressId")
-                        .IsUnique();
+                    b.HasIndex("AddressId");
 
-                    b.ToTable("Companys");
+                    b.ToTable("Companies");
                 });
 
             modelBuilder.Entity("EmployeeManagement.Entities.Duty", b =>
@@ -151,8 +147,8 @@ namespace EmployeeManagement.Migrations
             modelBuilder.Entity("EmployeeManagement.Entities.Company", b =>
                 {
                     b.HasOne("EmployeeManagement.Entities.Address", "Address")
-                        .WithOne("Company")
-                        .HasForeignKey("EmployeeManagement.Entities.Company", "AddressId")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -179,12 +175,6 @@ namespace EmployeeManagement.Migrations
                         .IsRequired();
 
                     b.Navigation("Company");
-                });
-
-            modelBuilder.Entity("EmployeeManagement.Entities.Address", b =>
-                {
-                    b.Navigation("Company")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("EmployeeManagement.Entities.Company", b =>

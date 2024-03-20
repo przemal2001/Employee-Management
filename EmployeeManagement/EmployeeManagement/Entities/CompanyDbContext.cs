@@ -5,17 +5,13 @@ namespace EmployeeManagement.Entities
     public class CompanyDbContext : DbContext
     {
         private string _connectionString = "Server=(localdb)\\mssqllocaldb;Database=EmployeeManagementDb;Trusted_Connection=True;";
-        public DbSet<Company> Companys { get; set; }
-        public DbSet<Address> Addresss { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Address> Addresses { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Duty> Duties { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Company>()
-                .Property(c => c.Id)
-                .IsRequired(true);
-
             modelBuilder.Entity<Company>()
                 .Property(c => c.Name)
                 .IsRequired(true)
@@ -31,20 +27,6 @@ namespace EmployeeManagement.Entities
                 .IsRequired(true)
                 .HasMaxLength(50);
 
-            modelBuilder.Entity<Company>()
-                .Property(c => c.AddressId)
-                .IsRequired(true);
-
-            modelBuilder.Entity<Company>()
-                .HasOne(c => c.Address)
-                .WithOne(a => a.Company)
-                .HasForeignKey<Address>(a => a.CompanyId)
-                .IsRequired();
-
-            modelBuilder.Entity<Address>()
-                .Property(a => a.Id)
-                .IsRequired(true);
-
             modelBuilder.Entity<Address>()
                 .Property(a => a.City)
                 .IsRequired(false)
@@ -59,20 +41,6 @@ namespace EmployeeManagement.Entities
                 .Property(a => a.PostalCode)
                 .IsRequired(true)
                 .HasMaxLength(20);
-
-            modelBuilder.Entity<Address>()
-                .Property(a => a.CompanyId)
-                .IsRequired(true);
-
-            modelBuilder.Entity<Address>()
-                .HasOne(a => a.Company)
-                .WithOne(c => c.Address)
-                .HasForeignKey<Company>(c => c.AddressId)
-                .IsRequired();
-
-            modelBuilder.Entity<Employee>()
-                .Property(e => e.Id)
-                .IsRequired(true);
 
             modelBuilder.Entity<Employee>()
                 .Property(e => e.FirstName)
@@ -93,14 +61,6 @@ namespace EmployeeManagement.Entities
                 .IsRequired(true)
                 .HasMaxLength(10);
 
-            modelBuilder.Entity<Employee>()
-                .Property(e => e.CompanyId)
-                .IsRequired(true);
-
-            modelBuilder.Entity<Duty>()
-                .Property(d => d.Id)
-                .IsRequired(true);
-
             modelBuilder.Entity<Duty>()
                 .Property(d => d.Title)
                 .IsRequired(true)
@@ -113,10 +73,6 @@ namespace EmployeeManagement.Entities
 
             modelBuilder.Entity<Duty>()
                 .Property(d => d.Prioryty)
-                .IsRequired(true);
-
-            modelBuilder.Entity<Duty>()
-                .Property(d => d.EmployeeId)
                 .IsRequired(true);
         }
 

@@ -9,23 +9,22 @@ namespace EmployeeManagement.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Addresss",
+                name: "Addresses",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     City = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
                     Street = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
-                    PostalCode = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    CompanyId = table.Column<int>(type: "int", nullable: false)
+                    PostalCode = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Addresss", x => x.Id);
+                    table.PrimaryKey("PK_Addresses", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Companys",
+                name: "Companies",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -37,11 +36,11 @@ namespace EmployeeManagement.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Companys", x => x.Id);
+                    table.PrimaryKey("PK_Companies", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Companys_Addresss_AddressId",
+                        name: "FK_Companies_Addresses_AddressId",
                         column: x => x.AddressId,
-                        principalTable: "Addresss",
+                        principalTable: "Addresses",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -62,9 +61,9 @@ namespace EmployeeManagement.Migrations
                 {
                     table.PrimaryKey("PK_Employees", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Employees_Companys_CompanyId",
+                        name: "FK_Employees_Companies_CompanyId",
                         column: x => x.CompanyId,
-                        principalTable: "Companys",
+                        principalTable: "Companies",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -92,10 +91,9 @@ namespace EmployeeManagement.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Companys_AddressId",
-                table: "Companys",
-                column: "AddressId",
-                unique: true);
+                name: "IX_Companies_AddressId",
+                table: "Companies",
+                column: "AddressId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Duties_EmployeeId",
@@ -117,10 +115,10 @@ namespace EmployeeManagement.Migrations
                 name: "Employees");
 
             migrationBuilder.DropTable(
-                name: "Companys");
+                name: "Companies");
 
             migrationBuilder.DropTable(
-                name: "Addresss");
+                name: "Addresses");
         }
     }
 }
